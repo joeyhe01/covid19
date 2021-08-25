@@ -1,0 +1,32 @@
+.toggleController{
+    text-align: right;
+    .material-icons{
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .selected{
+        background-color: black;
+        color: white;
+    }
+}
+.listTable{
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+}
+.chartWrapper{
+    margin-top: 30px;
+    width: 100%;
+    height: 48%;
+}
+.mapWrapper{
+    margin-top: 30px;
+    width: 100%;
+    height: 40%;
+}
+th.mat-sort-header-sorted {
+  color: black;
+}
+table{
+    height: 500px;
+}

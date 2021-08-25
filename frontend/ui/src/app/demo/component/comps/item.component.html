@@ -1,0 +1,25 @@
+<div class='item' [ngClass]="{'selected': dailyItem.selected}">
+
+  <div class="title" *ngIf="showType===_ENTITYTYPE.COUNTRY">
+    {{dailyItem.countryName}}
+  </div>
+  <div class="title" *ngIf="showType===_ENTITYTYPE.PROVINCE">
+    {{dailyItem.provinceName}}
+  </div>
+  <div class="title" *ngIf="showType===_ENTITYTYPE.CITY">
+    {{dailyItem.cityName}}
+  </div>
+  <div class="count">
+    Confirmed: {{dailyItem.confirmed}}
+  </div>
+  <div class="count">
+    Active: {{dailyItem.active}}
+  </div>
+  <div class="count">
+    Deaths: {{dailyItem.deaths}}
+  </div>
+  <div class="count">
+    Recovered: {{dailyItem.recovered}}
+  </div>
+
+</div>

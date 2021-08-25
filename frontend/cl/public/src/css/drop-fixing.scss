@@ -1,0 +1,28 @@
+
+/*ToolTip style - Using Drop*/
+.drop-element.my-drop-theme-arrows .drop-content {
+    border-radius: 10px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0 0 0 0 ;
+    padding: 10px;
+    max-width: 300px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.drop-element.my-drop-theme-arrows .drop-content {
+    border-radius: 6px;
+}
+
+.drop-element.drop-theme-arrows.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content:before {
+    bottom: 100%;
+    right: 6px;
+    border-width: 11px;
+    top: -20px;
+    border-bottom-color: #000;
+}
+
+.drop-element.drop-theme-arrows.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content, .drop-element.drop-theme-arrows.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content {
+    margin-top: 10px;
+}

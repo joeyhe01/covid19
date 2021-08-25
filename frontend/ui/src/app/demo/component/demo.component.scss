@@ -1,0 +1,57 @@
+.wrapper {
+  width: 100%;
+  position: fixed;
+  height: 100%;
+
+  .left {
+    position: absolute;
+    width: 350px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .right {
+    position: absolute;
+    left: 400px;
+    right: 50px;
+    top: 10px;
+    bottom: 0;
+
+    h5 {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 24px;
+      position: fixed;
+      width: 850px;
+      top: -2px;
+    }
+  }
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.detailTable {
+  position: relative;
+  width: 100%;
+}
+
+.buttonsWrapper {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+
+button {
+  margin-right: 10px;
+  float: left;
+}
+
+.cfx {
+  clear: both;
+}

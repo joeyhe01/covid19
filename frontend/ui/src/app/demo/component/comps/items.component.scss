@@ -1,0 +1,46 @@
+.title {
+  font-size: 20px;
+  width: 500px;
+  top: 6px;
+  left: 20px;
+  position: absolute;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+
+  .inner {
+    height: 100%;
+
+    .itemsWrapper {
+      overflow-y: scroll;
+      position: absolute;
+      top: 50px;
+      bottom: 50px;
+    }
+  }
+
+  .location_selector {
+    width: 80%;
+    margin-left: 20px;
+
+    .full_width {
+      width: 100%;
+    }
+  }
+}
+
+button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.cfx {
+  clear: both;
+}

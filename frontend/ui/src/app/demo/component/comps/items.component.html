@@ -1,0 +1,35 @@
+<!-- <div class='title' *ngIf="dailyMaxItems">
+  Show {{pageSize*page}}/{{dailyMaxItems.dailyMaxItems.length}} {{showType}},
+  Latest Date: {{dailyMaxItems.latestDate}}
+</div> -->
+
+<div class='title' *ngIf="dailyMaxItems">
+  Latest Date: {{dailyMaxItems.latestDate}}
+</div>
+
+<div class="wrapper" *ngIf="dailyMaxItems">
+  <div class="inner">
+
+    <form class="location_selector">
+      <mat-form-field class="full_width">
+        <input type="text" placeholder="Select location" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" (optionSelected)="optionSelected($event);">
+          <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+
+    <div class='itemsWrapper'>
+        <app-item *ngFor="let item of filteredItems.slice(0, pageSize*page)" [showType]="showType" [dailyItem]="item" (click)="select(item)">
+        </app-item>
+    </div>
+
+  </div>
+</div>
+<!--
+<button mat-raised-button color="primary" (click)="nextPage()">
+    <span class="material-icons">add_circle_outline</span>
+    Show More
+</button> -->

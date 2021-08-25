@@ -1,0 +1,8 @@
+<div *ngIf="legends" class="legends">
+  <div *ngFor="let legendTitle of legendKeys" class="legendBlock">
+      <span class="indicatorWrapper">
+          <span class="legendIndicator" [ngStyle]="{'background-color': legends[legendTitle] }"></span>
+      </span>
+      <span class="title">{{legendTitle}}</span>
+  </div>
+</div>

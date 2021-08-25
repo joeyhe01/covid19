@@ -1,0 +1,31 @@
+<div class="wrapper">
+
+    <div class="left">
+
+        <app-items-list
+            *ngIf="dailyMaxItems"
+            (onItemSelected)="itemSelected()"
+            [dailyMaxItems]="dailyMaxItems"
+            [showType]="showType">
+        </app-items-list>
+        <div class = "buttonsWrapper">
+          <button mat-raised-button color="primary" *ngIf="dailyMaxItems && dailyMaxItems.selectedItem && showDetailButton"
+              (click)="detail()">
+              <span class="material-icons">read_more</span>
+              Show {{showType}} Detail
+          </button>
+          <button mat-raised-button color="primary" *ngIf="dailyMaxItems && dailyMaxItems.selectedItem && showReturnButton"
+              (click)="return()">
+              <span class="material-icons">keyboard</span>
+              Return
+          </button>
+        </div>
+
+    </div>
+
+    <div class="right">
+      <h5> Coronavirus tracker app created by Joey He, with data collected from Johns Hopkins University CSSE's Github. Contact information: joeyhe01@gmail.com</h5>
+        <app-stat-details *ngIf="dailyStats && dailyMaxItems" (onCountrySelected)="itemSelected()" [dailyMaxItems]="dailyMaxItems" [dailyStats]="dailyStats"></app-stat-details>
+    </div>
+
+</div>
